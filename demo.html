@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vue Proj</title>
+    <title>Vue Color Boxes</title>
     <link rel="stylesheet" href="">
     <script src="vue.js"></script>
 
@@ -32,17 +32,27 @@
 
 <section id="app">
     <div class="demo" @click="attachRed = !attachRed" :class="{'red': attachRed}"></div>
-    <div class="demo" @click="attachGreen = !attachGreen" :class="{'green': attachGreen}"></div>
-    <div class="demo" @click="attachBlue = !attachBlue" :class="{'blue': attachBlue}"></div>
+    <div class="demo" @click="attachRed = !attachRed" :class="divClasses"></div>
+    <div class="demo"></div>
+    <!--<div class="demo" @click="attachGreen = !attachGreen" :class="{'green': attachGreen}"></div>-->
+    <!--<div class="demo" @click="attachBlue = !attachBlue" :class="{'blue': attachBlue}"></div>-->
 </section>
 
 <script>
     new Vue({
       el: '#app',
       data: {
-        attachRed: false,
-        attachBlue: false,
-        attachGreen: false
+        attachRed: false
+        // attachBlue: false,
+        // attachGreen: false
+      },
+      computed: {
+       divClasses: function() {
+          return {
+            red: this.attachRed,
+            blue: !this.attachRed
+          }
+        }
       }
     })
 </script>
