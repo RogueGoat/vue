@@ -13,7 +13,8 @@
 <section id="app">
     <button v-on:click="increase(2, $event)">Increase!</button>
     <p>{{ counter }}</p>
-    <p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{ y }}</p>
+    <p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{ y }} - <span v-on:mousemove.stop="">DEAD SPOOOOOT</span></p>
+
 </section>
 
 <script>
