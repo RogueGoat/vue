@@ -33,11 +33,11 @@
     },
     computed: {
       result: function(){
-        return this.value >= 37 ? 'Not there yet!' : 'Done!';
+        return this.value == 37 ? 'Done!' : 'Not there yet!';
       }
     },
     watch: {
-      value: function(value) {
+      result: function(value) {
         var vm = this;
         setTimeout(function() {
           vm.value = 0;
