@@ -13,7 +13,6 @@
 <section id="app">
     <!--these two buttons do the same thing-->
     <button v-on:click="increase(2, $event)">Increase!</button>
-
     <button v-on:click="counter++">Increase!</button>
 
     <p>{{ counter }} - {{ counter * 2 > 10 ? 'greater than 10' : 'smaller than 10' }}</p>

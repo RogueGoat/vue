@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c538a997-4972-4c7a-a721-9131c1d2330b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/assignment.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/counter_rehash.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/name.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/counter.html" afterPath="$PROJECT_DIR$/counter.html" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,11 +29,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="counter.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="name.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/name.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="counter.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/counter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+            <state relative-caret-position="285">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="counter_rehash.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/counter_rehash.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -50,6 +70,8 @@
         <option value="$PROJECT_DIR$/assignment.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/counter.html" />
+        <option value="$PROJECT_DIR$/name.html" />
+        <option value="$PROJECT_DIR$/counter_rehash.html" />
       </list>
     </option>
   </component>
@@ -60,7 +82,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="39" />
+    <option name="x" value="37" />
     <option name="y" value="23" />
     <option name="width" value="1340" />
     <option name="height" value="913" />
@@ -135,15 +157,15 @@
       <option name="presentableId" value="Default" />
       <updated>1533932407470</updated>
       <workItem from="1533932409160" duration="2344000" />
-      <workItem from="1534165030536" duration="4520000" />
+      <workItem from="1534165030536" duration="5027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6864000" />
+    <option name="totallyTimeSpent" value="7371000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="23" width="1340" height="913" extended-state="0" />
+    <frame x="37" y="23" width="1340" height="913" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25094768" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -208,10 +230,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/name.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/counter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/counter_rehash.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
