@@ -13,8 +13,8 @@
 <section id="app">
     <button v-on:click="increase(2, $event)">Increase!</button>
     <p>{{ counter }}</p>
-    <p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{ y }} - <span v-on:mousemove.stop="">DEAD SPOOOOOT</span></p>
-
+    <p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{ y }} - <span v-on:mousemove.stop.prevent="">DEAD SPOOOOOT</span></p>
+<!--the chaining of these event modifiers doesn't actually do anything here because these two do the same thing-->
 </section>
 
 <script>
