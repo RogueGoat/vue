@@ -21,7 +21,8 @@
         <p>See inside the template</p>
     </template>
 
-    <p>Do you also see me?</p>
+    <p v-show="show">Do you also see me?</p>
+    <!--Keeps it in the dom-->
     <button @click="show = !show">On/Off</button>
 </section>
 
