@@ -11,10 +11,16 @@
 
 
 <section id="app">
+    <!--these two buttons do the same thing-->
     <button v-on:click="increase(2, $event)">Increase!</button>
-    <p>{{ counter }}</p>
+
+    <button v-on:click="counter++">Increase!</button>
+
+    <p>{{ counter }} - {{ counter * 2 > 10 ? 'greater than 10' : 'smaller than 10' }}</p>
     <p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{ y }} - <span v-on:mousemove.stop.prevent="">DEAD SPOOOOOT</span></p>
-<!--the chaining of these event modifiers doesn't actually do anything here because these two do the same thing-->
+
+    <input type="text" v-on:keyup.enter.space="alertMe">
+    <!--this is a key modifier-->
 </section>
 
 <script>
@@ -32,6 +38,9 @@
         updateCoordinates: function(event) {
           this.x = event.clientX;
           this.y = event.clientY;
+        },
+        alertMe: function() {
+          alert('YOOO!');
         }
       }
     })
