@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vue Proj</title>
+    <title>Vue Counter</title>
     <link rel="stylesheet" href="">
     <script src="vue.js"></script>
 </head>
@@ -11,20 +11,19 @@
 
 
 <section id="app">
-    <input type="text">
-    <p>{{ sayHello() }} to <a v-bind:href="linkgiut ">Google!</a></p>
+    <button v-on:click="increase">Increase!</button>
+    <p>{{ counter }}</p>
 </section>
 
 <script>
     new Vue({
       el: '#app',
       data: {
-        title: 'Hello World',
-        link: 'http://google.com'
+        counter: 0
       },
       methods: {
-        sayHello: function() {
-          return this.title;
+        increase: function() {
+          this.counter++;
         }
       }
     })
