@@ -33,7 +33,10 @@
 <section id="app">
     <div class="demo" @click="attachRed = !attachRed" :class="{'red': attachRed}"></div>
     <div class="demo" @click="attachRed = !attachRed" :class="divClasses"></div>
-    <div class="demo"></div>
+    <div class="demo" :class="[color, {red: attachRed}]"></div>
+    <div class="demo" :class="color"></div>
+    <hr>
+    <input type="text" v-model="color">
     <!--<div class="demo" @click="attachGreen = !attachGreen" :class="{'green': attachGreen}"></div>-->
     <!--<div class="demo" @click="attachBlue = !attachBlue" :class="{'blue': attachBlue}"></div>-->
 </section>
@@ -42,7 +45,8 @@
     new Vue({
       el: '#app',
       data: {
-        attachRed: false
+        attachRed: false,
+        color: 'green'
         // attachBlue: false,
         // attachGreen: false
       },

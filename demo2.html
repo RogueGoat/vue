@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vue Color Boxes 2</title>
+    <link rel="stylesheet" href="">
+    <script src="vue.js"></script>
+
+    <style>
+        .demo {
+            width: 100px;
+            height: 100px;
+            background: teal;
+            display: inline-block;
+        }
+
+        .red {
+            background: red;
+        }
+        .green {
+            background: green;
+        }
+        .blue {
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<section id="app">
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <hr>
+    <input type="text" v-model="color">
+</section>
+
+<script>
+    new Vue({
+      el: '#app',
+      data: {
+        color: 'teal'
+      }
+    })
+</script>
+</body>
+</html>
