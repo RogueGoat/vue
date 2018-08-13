@@ -14,8 +14,11 @@
     <!--these two buttons do the same thing-->
     <button v-on:click="counter++">Increase!</button>
     <button v-on:click="counter--">Increase!</button>
+    <button v-on:click="secondCounter++">Increase! Second!</button>
+
     <p>Counter: {{ counter }}</p>
-    <p>Result: {{ result() }}</p>
+    <p>Result: {{ result() }} | {{ output }}</p>
+    <!--The result function gets called every time and for computed properties it is aware and doesn't run it every time-->
 
     <!--this is a key modifier-->
 </section>
@@ -24,10 +27,18 @@
     new Vue({
       el: '#app',
       data: {
-        counter: 0
+        counter: 0,
+        secondCounter: 0
+      },
+      computed: {
+        output: function(){
+          console.log('Computed');
+          return this.counter > 5 ? 'Greater than 5' : 'Smaller than 5';
+        }
       },
       methods: {
         result: function(){
+          console.log('Method');
           return this.counter > 5 ? 'Greater than 5' : 'Smaller than 5';
         }
       }
