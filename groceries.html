@@ -12,8 +12,13 @@
 
 <section id="app">
     <ul>
-        <li v-for="ingredient in ingredients">{{ ingredient }}</li>
+        <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
     </ul>
+
+    <template v-for="(ingredient, index) in ingredients">
+        <h1>{{ ingredient }}</h1>
+        <p>{{ index }}</p>
+    </template>
 </section>
 
 <script>
@@ -27,9 +32,7 @@
         ]
       },
       methods: {
-        sayHello: function() {
-          return this.title;
-        }
+
       }
     })
 </script>
