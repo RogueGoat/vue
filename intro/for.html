@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Vue Proj</title>
     <link rel="stylesheet" href="">
-    <script src="vue.js"></script>
+    <script src="../js/vue.js"></script>
 </head>
 <body>
 
 
 <section id="app">
     <ul>
-        <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ({{ i }})</li>
+        <li v-for="(ingredient, i) in ingredients" :key="ingredient">{{ ingredient }} ({{ i }})</li>
     </ul>
+    <button @click="ingredients.push('spices')">Add New</button>
 
     <hr>
     <ul>
@@ -21,7 +22,6 @@
             <div v-for="(value, key, index) in person">{{ key }}: {{ value }} ({{ index }})</div>
         </li>
     </ul>
-
     <span v-for="n in 10">{{ n }}</span>
     <hr>
 

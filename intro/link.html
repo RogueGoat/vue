@@ -3,28 +3,28 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vue Proj</title>
+    <title>Vue Link</title>
     <link rel="stylesheet" href="">
-    <script src="vue.js"></script>
+    <script src="../js/vue.js"></script>
 </head>
 <body>
 
 
 <section id="app">
-    <input type="text">
-    <p>{{ sayHello() }} to <a v-bind:href="link">Google!</a></p>
+    <!--more optimized syntax-->
+    <button @click="changeLink">Click to update The Link</button>
+    <a :href="link">The link</a>
 </section>
 
 <script>
     new Vue({
       el: '#app',
       data: {
-        title: 'Hello World',
         link: 'http://google.com'
       },
       methods: {
-        sayHello: function() {
-          return this.title;
+        changeLink: function() {
+          this.link = 'ttp//apple.com';
         }
       }
     })
