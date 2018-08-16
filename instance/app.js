@@ -1,8 +1,11 @@
 // Vue component to create reusable parts
 
-Vue.component('hello', {
-  template: '<h1>Hello</h1>'
-});
+// Vue.component('hello', {
+//   template: '<h1>Hello</h1>'
+// });
+
+// ---------------------------------------
+
 
 
 var vm1 = new Vue({
